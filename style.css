@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+
 body {
   background-color: black;
 }
@@ -28,39 +30,83 @@ body {
   color: azure;
 }
 
-.slider {
-  margin: 0 auto;
-  width: 98vw;
+@keyframes slider {
+  0% {
+    left: 0%;
+  }
+  15% {
+    left: 0%;
+  }
+  20% {
+    left: -100%;
+  }
+  35% {
+    left: -100%;
+  }
+  40% {
+    left: -200%;
+  }
+  55% {
+    left: -200%;
+  }
+  60% {
+    left: -300%;
+  }
+  75% {
+    left: -300%;
+  }
+  80% {
+    left: -400%;
+  }
+  95% {
+    left: -400%;
+  }
+  100% {
+    left: 0%;
+  }
 }
 
-.slide_viewer {
-  height: 70vh;
+body,
+figure {
+  margin: 0;
+  background: #101010;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+div#captioned-gallery {
+  width: 100%;
   overflow: hidden;
+}
+figure.slider {
   position: relative;
+  width: 500%;
+  font-size: 0;
+  animation: 20s slider infinite;
 }
-
-.slide img{
-	width: 80vw;
-  height: 70vh;
-  margin-left: 10vw
+figure.slider figure {
+  width: 20%;
+  height: 80vh;
+  display: inline-block;
+  position: inherit;
 }
-
-.slide_group {
-  height: 100%;
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content:center
+figure.slider img {
+  width: 80vw;
+  height: 90vh;
+  margin-left: 10vw;
 }
-
-.slide {
-  display: flex;
-  height: 100%;
+figure.slider figure figcaption {
   position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
   width: 100%;
+  font-size: 2rem;
+  padding: 0.6rem;
 }
 
-
-
-
-
+.seperator {
+  margin-top: 20px;
+  height: 5px;
+  width: 99vw;
+  background-color: #fff;
+}
