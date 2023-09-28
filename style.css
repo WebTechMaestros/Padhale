@@ -1,0 +1,66 @@
+body {
+  background-color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tabs {
+  display: flex;
+  align-self: flex-end;
+}
+
+.logo {
+  margin-left: 40px;
+  padding: 30px;
+  color: azure;
+}
+
+.pages {
+  display: inline;
+  margin: 0px 30px;
+  padding: 30px;
+  text-decoration: none;
+  color: azure;
+}
+
+.slider {
+  margin: 0 auto;
+  width: 98vw;
+}
+
+.slide_viewer {
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide img{
+	width: 80vw;
+  height: 70vh;
+  margin-left: 10vw
+}
+
+.slide_group {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content:center
+}
+
+.slide {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+
+
+
+
