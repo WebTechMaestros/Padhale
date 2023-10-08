@@ -1287,3 +1287,44 @@ section {
   font-family: sans-serif;
 }
 
+.container>.playlists{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 120px;
+}
+
+.container>.playlists>.card{
+  width: 80%; /* Adjust the card width as needed */
+  max-width: 350px; /* Set a maximum width */
+  margin: 0 auto; /* Center the card horizontally */
+  border: 3px solid #777777;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+.container>.playlists>.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px; /* Moves the photo upward to be half inside the card */
+  left: 50%; /* Centers the photo horizontally */
+  transform: translateX(-50%);
+  border: 3px solid #777777;
+}
+
+.container>.playlists>.card>.title1{
+margin-top: 45px;
+}
+
+/* #Responsive Design */
+@media (max-width: 768px) {
+  .container>.playlists>.card {
+      width: 90%; /* Adjust for smaller screens */
+      max-width: none;
+  }
+}
+
