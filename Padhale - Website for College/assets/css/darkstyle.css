@@ -23,8 +23,8 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
+  # Preloader
+  --------------------------------------------------------------*/
 #preloader {
   position: fixed;
   top: 0;
@@ -33,7 +33,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #37517e;
+  background: #06142e;
 }
 
 #preloader:before {
@@ -41,7 +41,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #37517e;
+  border: 6px solid #06142e;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -61,8 +61,8 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
+  # Back to top button
+  --------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -70,7 +70,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #47b2e4;
+  background: #191919;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -79,13 +79,13 @@ h6 {
 
 .back-to-top i {
   font-size: 24px;
-  color: #fff;
+  color: #3bd0f2;
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #6bc1e9;
-  color: #fff;
+  background: #191919;
+  color: #3bd0f2;
 }
 
 .back-to-top.active {
@@ -94,8 +94,8 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+  # Header
+  --------------------------------------------------------------*/
 #header {
   transition: all 0.5s;
   z-index: 997;
@@ -104,7 +104,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: #283a5ae6;
+  background: #070b13e6;
 }
 
 #header .logo {
@@ -126,11 +126,11 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
+  # Navigation Menu
+  --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
-*/
+  * Desktop Navigation 
+  */
 .navbar {
   padding: 0;
 }
@@ -171,7 +171,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #47b2e4;
+  color: #3bd0f2;
 }
 
 .navbar .getstarted,
@@ -182,14 +182,14 @@ h6 {
   border-radius: 50px;
   color: #fff;
   font-size: 18px;
-  border: 2px solid #47b2e4;
+  border: 2px solid #3bd0f2;
   font-weight: 600;
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #31a9e1;
+  background: #3bd0f2;
 }
 
 .navbar .dropdown ul {
@@ -217,7 +217,7 @@ h6 {
   font-size: 14px;
   text-transform: none;
   font-weight: 500;
-  color: #0c3c53;
+  color: #3bd0f2;
 }
 
 .navbar .dropdown ul a i {
@@ -227,7 +227,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: #47b2e4;
+  color: #3bd0f2;
 }
 
 .navbar .dropdown:hover > ul {
@@ -260,8 +260,8 @@ h6 {
 }
 
 /**
-* Mobile Navigation 
-*/
+  * Mobile Navigation 
+  */
 .mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
@@ -292,7 +292,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(40, 58, 90, 0.9);
+  background: #070b13e6;
   transition: 0.3s;
   z-index: 999;
 }
@@ -321,19 +321,19 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #37517e;
+  color: #3bd0f2;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #47b2e4;
+  color: #3bd0f2;
 }
 
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
-  color: #37517e;
+  color: #3bd0f2;
 }
 
 .navbar-mobile .dropdown ul {
@@ -363,7 +363,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover > a {
-  color: #47b2e4;
+  color: #3bd0f2;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -372,12 +372,12 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+  # Hero Section
+  --------------------------------------------------------------*/
 #hero {
   width: 100%;
   height: 100vh;
-  background: #1e3152;
+  background: #070b13e6;
 }
 
 #hero .container {
@@ -393,7 +393,7 @@ h6 {
 }
 
 #hero h2 {
-  color: rgba(255, 255, 255, 0.6);
+  color: #81e8ff;
   margin-bottom: 50px;
   font-size: 24px;
 }
@@ -409,7 +409,7 @@ h6 {
   transition: 0.5s;
   margin: 10px 0 0 0;
   color: #fff;
-  background: #47b2e4;
+  background: #3bd0f2;
 }
 
 #hero .btn-get-started:hover {
@@ -500,15 +500,16 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
+  # Sections General
+  --------------------------------------------------------------*/
 section {
   padding: 60px 0;
   overflow: hidden;
+  background-color: #0d0d0d;
 }
 
 .section-bg {
-  background-color: #f3f5fa;
+  background-color: #070b13e6;
 }
 
 .section-title {
@@ -523,7 +524,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #37517e;
+  color: #f5df60;
 }
 
 .section-title h2::before {
@@ -532,7 +533,7 @@ section {
   display: block;
   width: 120px;
   height: 1px;
-  background: #ddd;
+  background: #eceff0;
   bottom: 1px;
   left: calc(50% - 60px);
 }
@@ -543,7 +544,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #47b2e4;
+  background: #fff98e;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -553,9 +554,11 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About Us
---------------------------------------------------------------*/
-.about .content h3 {
+  # About Us
+  --------------------------------------------------------------*/
+
+.about .content h2 {
+  color: #03184e;
   font-weight: 600;
   font-size: 26px;
 }
@@ -566,6 +569,7 @@ section {
 }
 
 .about .content ul li {
+  color: #eceff0;
   padding-left: 28px;
   position: relative;
 }
@@ -581,6 +585,10 @@ section {
   font-size: 16px;
   color: #47b2e4;
   line-height: 1;
+}
+
+.about .content p {
+  color: #eceff0;
 }
 
 .about .content p:last-child {
@@ -610,8 +618,8 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Why Us
---------------------------------------------------------------*/
+  # Why Us
+  --------------------------------------------------------------*/
 .why-us .content {
   padding: 60px 100px 0 100px;
 }
@@ -619,7 +627,7 @@ section {
 .why-us .content h3 {
   font-weight: 400;
   font-size: 34px;
-  color: #37517e;
+  color: #eceffe;
 }
 
 .why-us .content h4 {
@@ -630,7 +638,7 @@ section {
 
 .why-us .content p {
   font-size: 15px;
-  color: #848484;
+  color: #d5d5d5;
 }
 
 .why-us .img {
@@ -654,7 +662,7 @@ section {
 
 .why-us .accordion-list li {
   padding: 20px;
-  background: #fff;
+  background: #000000;
   border-radius: 4px;
 }
 
@@ -685,6 +693,7 @@ section {
 }
 
 .why-us .accordion-list p {
+  color: #eceff0;
   margin-bottom: 0;
   padding: 10px 0 0 0;
 }
@@ -694,7 +703,7 @@ section {
 }
 
 .why-us .accordion-list a.collapsed {
-  color: #343a40;
+  color: #fbffe4;
 }
 
 .why-us .accordion-list a.collapsed:hover {
@@ -738,12 +747,12 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
+  # Skills
+  --------------------------------------------------------------*/
 .skills .content h3 {
   font-weight: 700;
   font-size: 32px;
-  color: #37517e;
+  color: #eceff0;
   font-family: "Poppins", sans-serif;
 }
 
@@ -760,6 +769,10 @@ section {
   font-size: 20px;
   padding-right: 4px;
   color: #47b2e4;
+}
+
+.skills .content p {
+  color: #d5d5d5;
 }
 
 .skills .content p:last-child {
@@ -780,7 +793,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #37517e;
+  color: #6cd7f5;
 }
 
 .skills .progress .skill .val {
@@ -789,7 +802,7 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #e8edf5;
+  background: #292929;
   height: 10px;
 }
 
@@ -797,17 +810,21 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #4668a2;
+  background-color: #b2b2b2;
 }
 
 /*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
+  # Services
+  --------------------------------------------------------------*/
+.featurespara {
+  color: #d5d5d5;
+}
+
 .services .icon-box {
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
-  background: #fff;
+  background: #181818;
 }
 
 .services .icon-box .icon {
@@ -827,11 +844,12 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #37517e;
+  color: #83b1ff;
   transition: ease-in-out 0.3s;
 }
 
 .services .icon-box p {
+  color: #d5d5d5;
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
@@ -846,8 +864,8 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Cta
---------------------------------------------------------------*/
+  # Cta
+  --------------------------------------------------------------*/
 .cta {
   background: linear-gradient(#191f3de6, #233148e6);
   background-size: cover;
@@ -898,16 +916,20 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
+  # Team
+  --------------------------------------------------------------*/
 .team .member {
   position: relative;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
   border-radius: 5px;
-  background: #fff;
+  background: #b2b0b0;
   transition: 0.5s;
   height: 100%;
+}
+
+.team .container .section-title {
+  color: #e7f5fb;
 }
 
 .team .member .pic {
@@ -932,12 +954,13 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
-  color: #37517e;
+  color: #010017;
 }
 
 .team .member span {
   display: block;
   font-size: 15px;
+  color: #000000;
   padding-bottom: 10px;
   position: relative;
   font-weight: 500;
@@ -949,12 +972,13 @@ section {
   display: block;
   width: 50px;
   height: 1px;
-  background: #cbd6e9;
+  background: #0fcfff;
   bottom: 0;
   left: 0;
 }
 
 .team .member p {
+  color: #000000;
   margin: 10px 0 0 0;
   font-size: 14px;
 }
@@ -974,11 +998,11 @@ section {
   border-radius: 50px;
   width: 32px;
   height: 32px;
-  background: #eff2f8;
+  background: #000000;
 }
 
 .team .member .social a i {
-  color: #37517e;
+  color: #5adcfd;
   font-size: 16px;
   margin: 0 2px;
 }
@@ -996,10 +1020,15 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Frequently Asked Questions
---------------------------------------------------------------*/
+  # Frequently Asked Questions
+  --------------------------------------------------------------*/
+
 .faq {
-  background: #fff;
+  background-color: #0d0d0d;
+}
+
+.faq .container .section-title p {
+  color: #eceff0;
 }
 
 .faq .faq-list {
@@ -1017,7 +1046,7 @@ section {
 
 .faq .faq-list li {
   padding: 20px;
-  background: #f3f5fa;
+  background: #000000;
   border-radius: 4px;
   position: relative;
 }
@@ -1039,7 +1068,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #47b2e4;
+  color: #5adcfd;
 }
 
 .faq .faq-list .icon-show,
@@ -1051,6 +1080,7 @@ section {
 }
 
 .faq .faq-list p {
+  color: #eceff0;
   margin-bottom: 0;
   padding: 10px 0 0 0;
 }
@@ -1060,7 +1090,7 @@ section {
 }
 
 .faq .faq-list a.collapsed {
-  color: #37517e;
+  color: #2ad1ff;
   transition: 0.3s;
 }
 
@@ -1083,8 +1113,8 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
+  # Breadcrumbs
+  --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
   background: #f3f5fa;
@@ -1125,16 +1155,16 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+  # Footer
+  --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #37517e;
+  background: #000000;
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #f3f5fa;
+  background: #242424;
 }
 
 #footer .footer-top .footer-contact {
@@ -1148,7 +1178,7 @@ section {
   line-height: 1;
   text-transform: uppercase;
   font-weight: 600;
-  color: #37517e;
+  color: #42bafa;
 }
 
 #footer .footer-top .footer-contact p {
@@ -1156,18 +1186,19 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Jost", sans-serif;
-  color: #5e5e5e;
+  color: #e5e1e1;
 }
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #37517e;
+  color: #42bafa;
   position: relative;
   padding-bottom: 12px;
 }
 
 #footer .footer-top .footer-links {
+  color: #eceff0;
   margin-bottom: 30px;
 }
 
@@ -1182,6 +1213,10 @@ section {
   color: #47b2e4;
   font-size: 18px;
   line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li a {
+  color: #eceff0;
 }
 
 #footer .footer-top .footer-links ul li {
