@@ -25,7 +25,7 @@ h6 {
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
-#preloader {
+/* #preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -48,7 +48,7 @@ h6 {
   width: 60px;
   height: 60px;
   animation: animate-preloader 1s linear infinite;
-}
+} */
 
 @keyframes animate-preloader {
   0% {
@@ -1320,8 +1320,14 @@ section {
   border: 3px solid #777777;
 }
 
-.container > .playlists > .card > .title1 {
+.container > .playlists > .card > .title1{
+  text-align: center;
   margin-top: 45px;
+}
+
+.container > .playlists > .card > .title{
+  text-align: center;
+  font-size: medium;
 }
 
 /* #Responsive Design */

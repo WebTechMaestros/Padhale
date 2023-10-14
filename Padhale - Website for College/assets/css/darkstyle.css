@@ -25,7 +25,7 @@ h6 {
 /*--------------------------------------------------------------
   # Preloader
   --------------------------------------------------------------*/
-#preloader {
+/* #preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -48,7 +48,7 @@ h6 {
   width: 60px;
   height: 60px;
   animation: animate-preloader 1s linear infinite;
-}
+} */
 
 @keyframes animate-preloader {
   0% {
@@ -1117,7 +1117,7 @@ section {
   --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #f3f5fa;
+  background: #1b1b1b;
   min-height: 40px;
   margin-top: 72px;
 }
@@ -1131,7 +1131,7 @@ section {
 .breadcrumbs h2 {
   font-size: 28px;
   font-weight: 600;
-  color: #37517e;
+  color: #c5c5c5;
 }
 
 .breadcrumbs ol {
@@ -1144,6 +1144,7 @@ section {
 }
 
 .breadcrumbs ol li + li {
+  color: #4668a2;
   padding-left: 10px;
 }
 
@@ -1299,7 +1300,25 @@ section {
 }
 
 /* #Inner Pages */
+
+.inner-page .container h2 {
+  padding-top: 20px;
+  color: #73c5eb;
+}
+
+.inner-page .container .theory h2 {
+  padding-top: 20px;
+  color: #d4d9dc;
+}
+
+.inner-page .container .theory p {
+  padding-top: 20px;
+  color: #7fb1cf;
+}
+
 .notes-box {
+  background-color: #131720;
+  border-radius: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1319,11 +1338,19 @@ section {
 .notes-box > a > button {
   margin-right: 40px;
   padding: 8px 12px;
-  background-color: #0ca7ef;
-  color: #e7f5fb;
-  border: none;
+  background-color: #0f1520;
+  color: #80e7fe;
+  border: solid whitesmoke 1px;
   border-radius: 15px;
   font-family: sans-serif;
+}
+
+.footer-top {
+  background-color: #010017;
+}
+
+.playlist > .container > p{
+  color: #80e7fe;
 }
 
 .container > .playlists {
