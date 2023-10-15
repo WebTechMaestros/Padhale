@@ -1349,8 +1349,8 @@ section {
   background-color: #010017;
 }
 
-.playlist > .container > p{
-  color: #80e7fe;
+.playlist > .container > p {
+  color: #6ddcf5;
 }
 
 .container > .playlists {
@@ -1362,6 +1362,8 @@ section {
 }
 
 .container > .playlists > .card {
+  background-color: #010101;
+  color: whitesmoke;
   width: 80%; /* Adjust the card width as needed */
   max-width: 350px; /* Set a maximum width */
   margin: 0 auto; /* Center the card horizontally */
@@ -1383,7 +1385,13 @@ section {
 }
 
 .container > .playlists > .card > .title1 {
+  text-align: center;
   margin-top: 45px;
+}
+
+.container > .playlists > .card > .title {
+  text-align: center;
+  font-size: medium;
 }
 
 /* #Responsive Design */

@@ -1303,7 +1303,7 @@ section {
   width: 80%; /* Adjust the card width as needed */
   max-width: 350px; /* Set a maximum width */
   margin: 0 auto; /* Center the card horizontally */
-  border: 3px solid #777777;
+  border: 3px solid #1d1d1d;
   border-radius: 10px;
   padding: 20px;
   position: relative;
@@ -1317,7 +1317,7 @@ section {
   top: -50px; /* Moves the photo upward to be half inside the card */
   left: 50%; /* Centers the photo horizontally */
   transform: translateX(-50%);
-  border: 3px solid #777777;
+  border: 3px solid #1d1d1d;
 }
 
 .container > .playlists > .card > .title1{
