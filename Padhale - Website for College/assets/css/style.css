@@ -1320,14 +1320,42 @@ section {
   border: 3px solid #1d1d1d;
 }
 
-.container > .playlists > .card > .title1{
+.container > .playlists > .card > .title1 {
   text-align: center;
   margin-top: 45px;
 }
 
-.container > .playlists > .card > .title{
+.container > .playlists > .card > .title {
   text-align: center;
   font-size: medium;
+}
+
+.book-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  height: auto;
+  width: 50vw;
+  border: 3px #283a5ae6 solid;
+  border-style: none solid;
+  margin-top: 40px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 12px;
+  transition: ease-in 1s;
+}
+
+.book-box:hover {
+  transform: scale(1.1);
+}
+
+.book-box > a > button {
+  margin-right: 40px;
+  padding: 8px 12px;
+  background-color: #0ca7ef;
+  color: #e7f5fb;
+  border: none;
+  border-radius: 15px;
+  font-family: sans-serif;
 }
 
 /* #Responsive Design */
