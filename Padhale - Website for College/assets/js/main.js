@@ -180,19 +180,6 @@
     }
   });
 
-  /**
-   * Preloader
-   */
-  // let preloader = document.querySelector("#preloader");
-  // if (preloader) {
-  //   window.addEventListener("load", () => {
-  //     preloader.remove();
-  //   });
-  // }
-
-  /**
-   * Initiate  glightbox
-   */
   const glightbox = GLightbox({
     selector: ".glightbox",
   });
