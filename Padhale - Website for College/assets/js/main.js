@@ -200,6 +200,21 @@
       },
     });
   }
+
+  // Join-us Form
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbyCCMFQ5IYu2FovicXzOpcI6gTFcNb6XbcEsSFsxUMDJmMJA3BhDAmLElNbn9ZP71DN/exec";
+  const form = document.forms["join-us-form"];
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) =>
+        alert("Thanks for Contacting us..! We Will Contact You Soon...")
+      )
+      .catch((error) => console.error("Error!", error.message));
+    form.reset();
+  });
   /**
    * Animation on scroll
    */
