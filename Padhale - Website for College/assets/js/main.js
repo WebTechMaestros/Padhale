@@ -202,19 +202,36 @@
   }
 
   // Join-us Form
-  const scriptURL =
-    "https://script.google.com/macros/s/AKfycbyCCMFQ5IYu2FovicXzOpcI6gTFcNb6XbcEsSFsxUMDJmMJA3BhDAmLElNbn9ZP71DN/exec";
-  const form = document.forms["join-us-form"];
+  document.addEventListener("DOMContentLoaded", function () {
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbyCCMFQ5IYu2FovicXzOpcI6gTFcNb6XbcEsSFsxUMDJmMJA3BhDAmLElNbn9ZP71DN/exec";
+    const form = document.forms["join-us-form"];
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    fetch(scriptURL, { method: "POST", body: new FormData(form) })
-      .then((response) =>
-        alert("Thanks for Contacting us..! We Will Contact You Soon...")
-      )
-      .catch((error) => console.error("Error!", error.message));
-    form.reset();
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) =>
+          alert("Thanks for Contacting us..! We Will Contact You Soon...")
+        )
+        .catch((error) => console.error("Error!", error.message));
+      form.reset();
+    });
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbxmPUHkG0EdoSv1vsTQHtFLilMB2a8NY3YDT9wJ4P7xv9KuIbcENHXPmdb96OG_rW53Bg/exec";
+    const form = document.forms["contact-us-form"];
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => alert("Thanks for you message !"))
+        .catch((error) => console.error("Error!", error.message));
+      form.reset();
+    });
+  });
+
   /**
    * Animation on scroll
    */

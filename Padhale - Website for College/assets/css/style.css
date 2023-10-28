@@ -1095,6 +1095,35 @@ section {
   content: "/";
 }
 
+#contact-us-form {
+  display: flex;
+  justify-content: center;
+  padding: 5vw;
+  background-color: #f2f7fa;
+  width: auto;
+}
+
+.form2 {
+  width: 90vw;
+}
+
+.form2 .fill-form2 .title {
+  font-weight: 800;
+  text-align: center;
+  font-family: Jost;
+  color: #1e3152;
+}
+
+.form2 .fill-form2 .subtitle {
+  text-align: center;
+  font-family: Jost;
+  color: #000000;
+}
+
+.form2 label {
+  color: #000000;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1105,7 +1134,7 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #f3f5fa;
+  background: #ffffff;
 }
 
 #footer .footer-top .footer-contact {
@@ -1330,7 +1359,12 @@ section {
 }
 
 /* Forms page */
+label {
+  color: #ddd;
+}
+
 #join-us-form {
+  background-color: #37517e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1338,16 +1372,20 @@ section {
 
 .form {
   display: flex;
-  background-color: #15172b;
+  background-color: #283a5ae6;
   border-radius: 20px;
   box-sizing: border-box;
-  height: 500px;
+  height: auto;
   padding: 20px;
-  width: auto;
+  width: 90vw;
 }
 
-.fill-form{
-  margin-left: 30px ;
+.fill-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  margin-right: 2%;
 }
 
 .title {
@@ -1359,7 +1397,7 @@ section {
 }
 
 .subtitle {
-  color: #eee;
+  color: #6ff3ff;
   font-family: sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -1381,11 +1419,11 @@ section {
 }
 
 .input {
-  background-color: #303245;
+  background-color: #d6d6d6;
   border-radius: 12px;
   border: 0;
   box-sizing: border-box;
-  color: #eee;
+  color: #000000;
   font-size: 18px;
   height: 100%;
   outline: 0;
@@ -1394,7 +1432,7 @@ section {
 }
 
 .cut {
-  background-color: #15172b;
+  background-color: #ffffff;
   border-radius: 10px;
   height: 20px;
   left: 20px;
@@ -1411,8 +1449,8 @@ section {
 }
 
 .placeholder {
-  color: #65657b;
-  font-family:Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
   left: 20px;
   line-height: 14px;
   position: absolute;
@@ -1427,7 +1465,7 @@ section {
 }
 
 .input:not(:placeholder-shown) ~ .placeholder {
-  color: #808097;
+  color: #ffffff;
 }
 
 .input:focus ~ .placeholder {

@@ -995,6 +995,35 @@ section {
   margin-left: 8px;
 }
 
+#contact-us-form {
+  display: flex;
+  justify-content: center;
+  padding: 5vw;
+  background-color: #000000;
+  width: auto;
+}
+
+.form2 {
+  width: 90vw;
+}
+
+.form2 .fill-form2 .title {
+  font-weight: 800;
+  text-align: center;
+  font-family: Jost;
+  color: #f5df60;
+}
+
+.form2 .fill-form2 .subtitle {
+  text-align: center;
+  font-family: Jost;
+  color: #ffffff;
+}
+
+.form2 label {
+  color: #ffe7e7;
+}
+
 /*--------------------------------------------------------------
   # Frequently Asked Questions
   --------------------------------------------------------------*/
@@ -1407,25 +1436,38 @@ section {
   font-family: sans-serif;
 }
 
-/* Forms page */
+/* Join-Us Form */
+label {
+  color: #ddd;
+}
+
 #join-us-form {
-  background-color: #070b13e6;
+  background-color: #0f1521;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .form {
-  background-color: #15172b;
+  display: flex;
+  background-color: #0e0e0ee6;
   border-radius: 20px;
   box-sizing: border-box;
-  height: 500px;
+  height: auto;
   padding: 20px;
-  width: 320px;
+  width: 90vw;
+}
+
+.fill-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  margin-right: 2%;
 }
 
 .title {
-  color: #eee;
+  color: #ffea00;
   font-family: sans-serif;
   font-size: 36px;
   font-weight: 600;
@@ -1433,7 +1475,7 @@ section {
 }
 
 .subtitle {
-  color: #eee;
+  color: #f79132;
   font-family: sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -1455,7 +1497,7 @@ section {
 }
 
 .input {
-  background-color: #303245;
+  background-color: #272727;
   border-radius: 12px;
   border: 0;
   box-sizing: border-box;
@@ -1468,7 +1510,7 @@ section {
 }
 
 .cut {
-  background-color: #15172b;
+  background-color: #ffffff;
   border-radius: 10px;
   height: 20px;
   left: 20px;
@@ -1476,11 +1518,7 @@ section {
   top: -20px;
   transform: translateY(0);
   transition: transform 200ms;
-  width: 76px;
-}
-
-.cut-short {
-  width: 50px;
+  width: auto;
 }
 
 .input:focus ~ .cut,
@@ -1489,11 +1527,10 @@ section {
 }
 
 .placeholder {
-  color: #65657b;
-  font-family: sans-serif;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
   left: 20px;
   line-height: 14px;
-  pointer-events: none;
   position: absolute;
   transform-origin: 0 50%;
   transition: transform 200ms, color 200ms;
@@ -1506,7 +1543,7 @@ section {
 }
 
 .input:not(:placeholder-shown) ~ .placeholder {
-  color: #808097;
+  color: #ffffff;
 }
 
 .input:focus ~ .placeholder {
@@ -1514,11 +1551,11 @@ section {
 }
 
 .submit {
-  background-color: #08d;
+  background-color: rgb(0, 149, 179);
   border-radius: 12px;
   border: 0;
   box-sizing: border-box;
-  color: #eee;
+  color: #fffcfc;
   cursor: pointer;
   font-size: 18px;
   height: 50px;

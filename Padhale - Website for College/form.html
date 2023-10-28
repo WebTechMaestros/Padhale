@@ -96,12 +96,15 @@
         <div class="form">
           <img
             src="./assets/img/team.jpg"
-            style="width: 400px; height: auto; border-radius: 20px"
+            style="width: 50%; height: auto; border-radius: 20px"
           />
-          <form class="fill-form" name="join-us-form" id="myForm">
-            <div class="title">Hello!!</div>
-            <div class="subtitle">We would like to know about you.</div>
-            <div class="input-container ic1">
+          <form class="fill-form" name="join-us-form" id="myForm" method="post">
+            <div class="title">Be a part of something Amazing!</div>
+            <div class="subtitle">
+              We're on a mission to create something extraordinary. Join us in
+              making a difference!
+            </div>
+            <div class="input-container ic2">
               <input id="Name" class="input" name="Name" type="text" />
               <div class="cut"></div>
               <label for="name" class="">Name</label>
@@ -116,7 +119,12 @@
               <div class="cut"></div>
               <label for="number" class="">Number</label>
             </div>
-            <input type="submit" class="submit" value="submit" />
+            <div class="input-container ic2">
+              <input id="Email" class="input" name="Email" type="email" />
+              <div class="cut"></div>
+              <label for="email" class="">Email</label>
+            </div>
+            <input type="submit" class="submit" value="Submit" />
           </form>
         </div>
       </section>
