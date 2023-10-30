@@ -234,7 +234,8 @@ body {
   * Mobile Navigation 
   */
 .mobile-nav-toggle {
-  color: #fff;
+  background:#010101;
+  color: #3bd0f2;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -243,7 +244,7 @@ body {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+  color: #3bd0f2;
 }
 
 @media (max-width: 991px) {
@@ -283,7 +284,7 @@ body {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  background-color:#070b13e6;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -315,7 +316,8 @@ body {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background: #010017;
+  color: #f5df60;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -1350,6 +1352,18 @@ section {
   font-family: sans-serif;
 }
 
+@media (max-width: 768px) {
+  .notes-box {
+    width: 90vw;
+  }
+
+  .notes-box > a > button {
+    margin-left: 30px;
+    margin-right: 20px;
+    width: 100px;
+  }
+}
+
 .footer-top {
   background-color: #010017;
 }
@@ -1366,9 +1380,20 @@ section {
   grid-row-gap: 120px;
 }
 
+.inner-page .container p {
+  color: #7fb1cf;
+}
+.container > .playlists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 120px;
+}
+
 .container > .playlists > .card {
-  background-color: #010101;
   color: whitesmoke;
+  background-color: #010101;
   width: 80%; /* Adjust the card width as needed */
   max-width: 350px; /* Set a maximum width */
   margin: 0 auto; /* Center the card horizontally */
@@ -1395,12 +1420,77 @@ section {
 }
 
 .container > .playlists > .card > .title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   font-size: medium;
 }
 
-.inner-page .container p {
-  color: #7fb1cf;
+.container > .playlists > .card button {
+  margin: 10px auto;
+  display: block;
+  border-radius: 20px;
+  background-color: #24d038;
+  width: 150px;
+  align-self: center;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .container > .playlists {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+  }
+
+  .container > .playlists > .card {
+    max-width: 300px;
+  }
+
+  .container > .playlists > .card img {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+  }
+
+  .container > .playlists > .card > .title1 {
+    margin-top: 30px;
+  }
+}
+
+/* Media Query for even smaller screens */
+@media (max-width: 576px) {
+  .container > .playlists {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .container > .playlists > .card {
+    max-width: 250px;
+  }
+
+  .container > .playlists > .card img {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+  }
+
+  .container > .playlists > .card > .title1 {
+    margin-top: 20px;
+  }
+
+  /* Further adjust button size and margins for even smaller screens */
+  .container > .playlists > .card button {
+    width: 100px;
+    margin: 10px auto;
+    padding: 6px 0;
+  }
 }
 
 .book-box {
@@ -1434,6 +1524,18 @@ section {
   border: solid whitesmoke 1px;
   border-radius: 15px;
   font-family: sans-serif;
+}
+
+@media (max-width: 768px) {
+  .book-box {
+    width: 90vw;
+  }
+
+  .book-box > a > button {
+    margin-right: 30px;
+    margin-left: 40px;
+    width: 100px;
+  }
 }
 
 /* Join-Us Form */

@@ -1264,6 +1264,8 @@ section {
 }
 
 /* #Inner Pages */
+
+/*Notes Page*/
 .notes-box {
   display: flex;
   justify-content: space-between;
@@ -1291,6 +1293,19 @@ section {
   font-family: sans-serif;
 }
 
+@media (max-width: 768px){
+  .notes-box{
+    width: 90vw;
+  }
+
+  .notes-box > a > button{
+    margin-left: 30px;
+    margin-right: 20px;
+    width: 100px;
+  }
+}
+
+/*Playlist Page*/
 .container > .playlists {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1326,10 +1341,81 @@ section {
 }
 
 .container > .playlists > .card > .title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #000000;
   text-align: center;
   font-size: medium;
 }
 
+.container > .playlists > .card button {
+  margin: 10px auto;
+  display: block;
+  border-radius: 20px;
+  background-color: #24d038;
+  width: 150px;
+  align-self: center;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .container > .playlists {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+  }
+
+  .container > .playlists > .card {
+    max-width: 300px;
+  }
+
+  .container > .playlists > .card img {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+  }
+
+  .container > .playlists > .card > .title1 {
+    margin-top: 30px;
+  }
+}
+
+/* Media Query for even smaller screens */
+@media (max-width: 576px) {
+  .container > .playlists {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .container > .playlists > .card {
+    max-width: 250px;
+  }
+
+  .container > .playlists > .card img {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+  }
+
+  .container > .playlists > .card > .title1 {
+    margin-top: 20px;
+  }
+
+  /* Further adjust button size and margins for even smaller screens */
+  .container > .playlists > .card button {
+    width: 100px;
+    margin: 10px auto;
+    padding: 6px 0;
+  }
+}
+
+/* Books Page */
 .book-box {
   display: flex;
   justify-content: space-between;
@@ -1356,6 +1442,18 @@ section {
   border: none;
   border-radius: 15px;
   font-family: sans-serif;
+}
+
+@media (max-width: 768px){
+  .book-box{
+    width: 90vw;
+  }
+
+  .book-box > a > button {
+    margin-right: 30px;
+    margin-left: 40px;
+    width: 100px;
+  }
 }
 
 /* Forms page */
