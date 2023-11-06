@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -778,7 +780,8 @@ section {
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
-  background: #fff;
+  border-radius: 20px;
+  background-image: linear-gradient(to right,#ffffff , #c0eeff);
 }
 
 .services .icon-box .icon {
@@ -1293,12 +1296,12 @@ section {
   font-family: sans-serif;
 }
 
-@media (max-width: 768px){
-  .notes-box{
+@media (max-width: 768px) {
+  .notes-box {
     width: 90vw;
   }
 
-  .notes-box > a > button{
+  .notes-box > a > button {
     margin-left: 30px;
     margin-right: 20px;
     width: 100px;
@@ -1444,8 +1447,8 @@ section {
   font-family: sans-serif;
 }
 
-@media (max-width: 768px){
-  .book-box{
+@media (max-width: 768px) {
+  .book-box {
     width: 90vw;
   }
 
